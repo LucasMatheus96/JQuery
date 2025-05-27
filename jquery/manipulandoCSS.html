@@ -24,5 +24,13 @@
             return `${2*2}em`
         })
 
+        $('#div2').addClass('destaque')
+
+        const temClasse = $('#div2').hasClass('destaque')
+        $('#resultado').append(`<br> Tem class? ${temClasse}`)
+
+        $('#div2').removeClass('destaque')
+        $('#div2').toggleClass('destaque')
+
     </script>
 </body>
